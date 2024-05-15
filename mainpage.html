@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .bio {
+            text-align: center;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Social Media</h2>
+    <img class="profile-picture" src="assets/profile_picture.jpg" alt="Profile Picture">
+    <h3>John Doe</h3>
+    <div class="bio">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div class="actions">
+        <button onclick="like()">Like</button>
+        <button onclick="comment()">Comment</button>
+        <button onclick="share()">Share</button>
+    </div>
+</div>
+
+<script>
+    function like() {
+        // Add like functionality here
+        alert("Liked!");
+    }
+
+    function comment() {
+        // Add comment functionality here
+        alert("Commented!");
+    }
+
+    function share() {
+        // Add share functionality here
+        alert("Shared!");
+    }
+</script>
+
+</body>
+</html>
