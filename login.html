@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licenter Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .title{
+            max-width: 600px;
+            height: max-content;
+            size: 20px;
+            background-color: dodgerblue;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(60, 158, 255);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: royalblue;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">
+    <h2>Licenter -- Login</h2>
+    </div>
+    <input type="text" id="usuario" placeholder="Usuário...">
+    <input type="password" id="senha" placeholder="Senha...">
+    <button onclick="login()">Login</button>
+    <p id="errorMessage" class="error"></p>
+    <p><a href="#">Forgot senha?</a> | <a href="#">Sign Up</a></p> 
+</div>
+
+<script>
+    function login() {
+        var usuario = document.getElementById("usuario").value;
+        var senha = document.getElementById("senha").value;
+        if (usuario === "@3mosqueteiros" && senha === "senha_incorreta") {
+            window.location.href = "social_media.html";
+        } else {
+            alert("Senha Incorreta");
+        }
+    }
+</script>
+
+</body>
+</html>
